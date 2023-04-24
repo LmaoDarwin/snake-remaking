@@ -1,0 +1,59 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+}
+html {
+  background-color: black;
+}
+button:disabled {
+  background-color: grey;
+}
+button:hover:not(:disabled) {
+  cursor: pointer;
+  background-color: darkblue;
+}
+input,
+button {
+  border: none;
+  outline: none;
+}
+input {
+  padding: 4px 20px;
+  background-color: darkslategrey;
+}
+button {
+  background-color: blue;
+  border-radius: 20px;
+  padding: 4px 20px;
+  font-size: large;
+}
+body {
+  margin: auto;
+  background-color: rgb(10,10,10);
+  border: 20px solid darkslateblue;
+  border-radius: 20px;
+  /* background-image: linear-gradient(to bottom, rgb(10,10,10) 50%, darkgoldenrod 200%); */
+  height: 1024px;
+  width: 1024px;
+  max-height: 100vh;
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+  align-items: center;
+}
+canvas {
+  background-color: darkolivegreen;
+  border-radius: 5px;
+  box-shadow: 0 0 150px -30px darkolivegreen;
+  align-self: start;
+  display: none;
+}
+.before-play > * {
+  margin-bottom: 10px;
+  display: block;
+}
+button#play {
+  margin: auto;
+}
